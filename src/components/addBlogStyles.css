@@ -1,67 +1,85 @@
 /* addBlogStyles.css */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.add-blog-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures no overflow */
+}
+
+.add-blog-title {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.add-blog-form .form-field {
+  margin-bottom: 20px;
+}
+
+.add-blog-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-field, .textarea-field {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus, .textarea-field:focus {
+  border-color: #78c257;
+}
+
+.textarea-field {
+  min-height: 100px;
+}
+
+.enhance-button, .submit-button {
+  background-color: #78c257;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%; /* Makes buttons full width on mobile */
+  transition: background-color 0.3s;
+}
+
+.enhance-button:hover, .submit-button:hover {
+  background-color: #5a8e3d;
+}
+
+.enhance-button:focus, .submit-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
   .add-blog-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Slightly reduce padding */
+    margin: 20px; /* Reduce margin for smaller screens */
   }
-  
-  .add-blog-title {
-    text-align: center;
-    color: #444;
-    margin-bottom: 20px;
-  }
-  
-  .add-blog-form .form-field {
-    margin-bottom: 20px;
-  }
-  
-  .add-blog-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-  }
-  
+
   .input-field, .textarea-field {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.2s;
+    margin-left: 10px;
+    margin-right: 10px; /* Slightly reduce padding for input fields */
   }
-  
-  .input-field:focus, .textarea-field:focus {
-    border-color: #78c257;
-  }
-  
-  .textarea-field {
-    min-height: 100px;
-  }
-  
+
   .enhance-button, .submit-button {
-    background-color: #78c257;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+    padding: 12px 0; /* Adjust padding for better tap targets */
   }
-  
-  .enhance-button:hover, .submit-button:hover {
-    background-color: #5a8e3d;
-  }
-  
-  .enhance-button:focus, .submit-button:focus {
-    outline: none;
-  }  
+}
